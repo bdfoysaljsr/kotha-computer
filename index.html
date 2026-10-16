@@ -4,116 +4,320 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#071326">
-  <meta name="description" content="Kotha Computer — কম্পিউটার, প্রিন্টিং, ডিজাইন, অনলাইন আবেদন ও কাস্টম অর্ডার সেবা।">
-  <title>Kotha Computer | কম্পিউটার ও ডিজিটাল সেবা</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Kotha Computer — প্রিন্টিং, টাইপিং, ডিজাইন, PDF কাজ, অনলাইন ফর্ম পূরণ ও কম্পিউটার সাপোর্ট সেবা। ভরতপুর, মনিরামপুর, যশোর।">
+  <title>Kotha Computer | ডিজিটাল সেবা কেন্দ্র</title>
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/logo.svg">
+  <link rel="stylesheet" href="/styles.css">
+
+  <meta property="og:title" content="Kotha Computer | ডিজিটাল সেবা কেন্দ্র">
+  <meta property="og:description" content="প্রিন্টিং, টাইপিং, ডিজাইন, PDF কাজ সহ সব ডিজিটাল সেবা এক জায়গায়।">
+  <meta property="og:type" content="website">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Kotha Computer হোম">
-      <img src="assets/logo.svg" alt="" width="44" height="44">
-      <span><strong>Kotha Computer</strong><small>আপনার ডিজিটাল সেবা কেন্দ্র</small></span>
-    </a>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="Kotha Computer হোম">
+    <img src="/assets/logo.svg" alt="" width="44" height="44">
+    <span>
+      <strong>Kotha Computer</strong>
+      <small data-i18n="footer.tagline">আপনার ডিজিটাল সেবা কেন্দ্র</small>
+    </span>
+  </a>
+
+  <nav id="mainNav" aria-label="প্রধান মেনু">
+    <a href="#services" data-i18n="nav.services">সেবাসমূহ</a>
+    <a href="#how" data-i18n="nav.howItWorks">কীভাবে কাজ করে</a>
+    <a href="#order" data-i18n="nav.order">অর্ডার করুন</a>
+    <a href="#about" data-i18n="nav.about">দোকান পরিচিতি</a>
+    <a href="#contact" data-i18n="nav.contact">যোগাযোগ</a>
+  </nav>
+
+  <div class="header-actions">
+    <button id="langToggle" class="lang-toggle" type="button" aria-label="Change language">EN</button>
+    <a class="header-wa" href="https://wa.me/8801978551099" target="_blank" rel="noopener" data-i18n="nav.whatsapp">WhatsApp</a>
     <button class="menu-toggle" id="menuToggle" aria-label="মেনু খুলুন" aria-expanded="false">☰</button>
-    <nav id="mainNav">
-      <a href="#services">সেবাসমূহ</a><a href="#products">পণ্য</a><a href="#order">অর্ডার করুন</a><a href="#about">দোকান পরিচিতি</a><a href="#contact">যোগাযোগ</a>
-    </nav>
-    <a class="header-wa" href="https://wa.me/8801978551099" target="_blank" rel="noopener">WhatsApp</a>
-  </header>
+  </div>
+</header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-copy">
-        <span class="eyebrow">KOTHA COMPUTER • BHARATPUR, JASHORE</span>
-        <h1>আপনার প্রয়োজন,<br><span>আমাদের ডিজিটাল সমাধান।</span></h1>
-        <p>কম্পিউটার ও অফিসের কাজ, প্রিন্টিং, ছবি ও ডিজাইন, অনলাইন আবেদন এবং কাস্টম অর্ডার—সহজে অর্ডার করুন WhatsApp-এ।</p>
-        <div class="hero-actions"><a class="btn primary" href="#order">অর্ডার করুন <span>↗</span></a><a class="btn secondary" href="#services">সেবাসমূহ দেখুন</a></div>
-        <div class="trust-row"><span>✓ কাস্টমার অ্যাকাউন্ট প্রয়োজন নেই</span><span>✓ ক্যাশ অন ডেলিভারি/দোকানে পেমেন্ট</span></div>
-      </div>
-      <div class="hero-art" aria-label="কম্পিউটার ও ডিজিটাল সেবা">
-        <div class="orb orb-one"></div><div class="orb orb-two"></div>
-        <div class="screen"><div class="screen-top"><i></i><i></i><i></i></div><div class="screen-body"><div class="screen-mark">KC</div><div class="screen-line long"></div><div class="screen-line"></div><div class="screen-cards"><b>PRINT</b><b>DESIGN</b><b>ONLINE</b></div></div></div>
-        <div class="floating-card card-print">▤ <span>প্রিন্টিং ও স্ক্যান</span></div><div class="floating-card card-file">↥ <span>কাস্টম ফাইল অর্ডার</span></div>
-      </div>
-    </section>
+<main id="home">
 
-    <section class="quick-facts">
-      <div><span class="fact-icon">⌘</span><strong>কম্পিউটার সেবা</strong><small>দৈনন্দিন ডিজিটাল কাজ</small></div>
-      <div><span class="fact-icon">▤</span><strong>প্রিন্ট ও ডিজাইন</strong><small>ডকুমেন্ট থেকে ব্যানার</small></div>
-      <div><span class="fact-icon">↗</span><strong>WhatsApp অর্ডার</strong><small>অ্যাকাউন্ট ছাড়াই</small></div>
-      <div><span class="fact-icon">৳</span><strong>সহজ পেমেন্ট</strong><small>COD/দোকানে পরিশোধ</small></div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="section-heading"><div><span class="eyebrow">WHAT WE DO</span><h2>আমাদের সেবাসমূহ</h2></div><p>আপনার প্রয়োজনের সেবা নির্বাচন করুন। মূল্য ও সময় কাজের ধরন অনুযায়ী নিশ্চিত করা হবে।</p></div>
-      <div class="service-grid">
-        <article class="service-card"><span class="service-icon">▤</span><h3>প্রিন্টিং ও ডকুমেন্ট</h3><p>বাংলা/ইংরেজি টাইপিং, সাদা-কালো ও কালার প্রিন্ট, ফটোকপি, স্ক্যান, ল্যামিনেশন, PDF কাজ।</p><button class="text-link choose-service" data-service="প্রিন্টিং ও ডকুমেন্ট">এই সেবা অর্ডার করুন ↗</button></article>
-        <article class="service-card"><span class="service-icon">▧</span><h3>ছবি ও গ্রাফিক ডিজাইন</h3><p>পাসপোর্ট সাইজ ছবি, ছবি এডিট, ব্যানার, পোস্টার, ভিজিটিং কার্ড, লোগো ও সোশ্যাল মিডিয়া ডিজাইন।</p><button class="text-link choose-service" data-service="ছবি ও গ্রাফিক ডিজাইন">এই সেবা অর্ডার করুন ↗</button></article>
-        <article class="service-card"><span class="service-icon">⌘</span><h3>কম্পিউটার ও অফিস</h3><p>CV, আবেদনপত্র, অ্যাসাইনমেন্ট, অফিস ডকুমেন্ট, ফাইল কনভার্ট ও ডাটা ট্রান্সফার।</p><button class="text-link choose-service" data-service="কম্পিউটার ও অফিস">এই সেবা অর্ডার করুন ↗</button></article>
-        <article class="service-card"><span class="service-icon">◎</span><h3>অনলাইন আবেদন সহায়তা</h3><p>চাকরি, ভর্তি, পরীক্ষার ফর্ম, অ্যাডমিট কার্ড ও বিভিন্ন অনলাইন আবেদন পূরণে সহায়তা।</p><button class="text-link choose-service" data-service="অনলাইন আবেদন সহায়তা">এই সেবা অর্ডার করুন ↗</button></article>
-        <article class="service-card"><span class="service-icon">⚙</span><h3>টেকনিক্যাল সাপোর্ট</h3><p>Windows/সফটওয়্যার সেটআপ, প্রিন্টার, Wi-Fi/রাউটার ও সাধারণ কম্পিউটার সমস্যা সমাধান।</p><button class="text-link choose-service" data-service="টেকনিক্যাল সাপোর্ট">এই সেবা অর্ডার করুন ↗</button></article>
-        <article class="service-card"><span class="service-icon">✳</span><h3>কাস্টম কাজ</h3><p>নিজের প্রয়োজন, সাইজ, কপি সংখ্যা ও নির্দেশনা দিয়ে কাজের মূল্য জানতে বা অর্ডার করতে পারবেন।</p><button class="text-link choose-service" data-service="কাস্টম কাজ">এই সেবা অর্ডার করুন ↗</button></article>
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow" data-i18n="hero.eyebrow">KOTHA COMPUTER • ভরতপুর, যশোর</span>
+      <h1>
+        <span data-i18n="hero.title1">আপনার প্রয়োজন,</span><br>
+        <span class="accent" data-i18n="hero.title2">আমাদের ডিজিটাল সমাধান।</span>
+      </h1>
+      <p data-i18n="hero.desc">প্রিন্টিং, টাইপিং, ডিজাইন, PDF কাজ, অনলাইন ফর্ম পূরণ — সব সেবা সহজে অর্ডার করুন WhatsApp-এ। কোনো অ্যাকাউন্ট লাগবে না।</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#order"><span data-i18n="hero.cta1">সেবা অর্ডার করুন</span> <span aria-hidden="true">↗</span></a>
+        <a class="btn secondary" href="#services" data-i18n="hero.cta2">সেবাসমূহ দেখুন</a>
       </div>
-    </section>
-
-    <section class="section product-section" id="products">
-      <div class="section-heading"><div><span class="eyebrow">PRODUCTS & REQUESTS</span><h2>পণ্য ও কাস্টম অর্ডার</h2></div><p>পণ্যের দাম ও স্টক নিশ্চিত করতে অর্ডারের বিবরণ WhatsApp-এ পাঠান।</p></div>
-      <div class="product-grid">
-        <article class="product-card"><div class="product-visual visual-blue">⌨</div><div class="product-info"><span class="tag">কম্পিউটার এক্সেসরিজ</span><h3>কিবোর্ড / মাউস</h3><p>বিভিন্ন মডেল ও বাজেটের পণ্য</p><button class="btn small secondary choose-product" data-product="কিবোর্ড / মাউস">দাম জানতে অর্ডার</button></div></article>
-        <article class="product-card"><div class="product-visual visual-purple">🎧</div><div class="product-info"><span class="tag">এক্সেসরিজ</span><h3>হেডফোন / হেডসেট</h3><p>প্রাপ্যতা ও দাম WhatsApp-এ জেনে নিন</p><button class="btn small secondary choose-product" data-product="হেডফোন / হেডসেট">দাম জানতে অর্ডার</button></div></article>
-        <article class="product-card"><div class="product-visual visual-teal">🖨</div><div class="product-info"><span class="tag">প্রিন্টিং</span><h3>প্রিন্টিং অর্ডার</h3><p>কপি, রঙ ও কাগজের ধরন অনুযায়ী</p><button class="btn small secondary choose-product" data-product="প্রিন্টিং অর্ডার">অর্ডার করুন</button></div></article>
-        <article class="product-card"><div class="product-visual visual-orange">✦</div><div class="product-info"><span class="tag">কাস্টম ডিজাইন</span><h3>ব্যানার / কার্ড / ছবি</h3><p>নিজের মাপ ও ডিজাইনের চাহিদা দিন</p><button class="btn small secondary choose-product" data-product="ব্যানার / কার্ড / ছবি">কোটেশন নিন</button></div></article>
+      <div class="trust-row">
+        <span data-i18n="hero.trust1">✓ কোনো কাস্টমার অ্যাকাউন্ট লাগবে না</span>
+        <span data-i18n="hero.trust2">✓ ফাইল আপলোড করা লাগবে না</span>
       </div>
-      <p class="note">এগুলো প্রাথমিক উদাহরণ। বাস্তব পণ্যের তালিকা, ছবি, মূল্য ও স্টক দোকান থেকে নিশ্চিত করে যোগ করতে হবে।</p>
-    </section>
+    </div>
 
-    <section class="order-section" id="order">
-      <div class="order-intro"><span class="eyebrow">QUICK ORDER</span><h2>অর্ডার ফর্ম পূরণ করুন</h2><p>সাবমিট করলে আপনার তথ্যসহ WhatsApp চ্যাট খুলবে। সেখানে মেসেজটি পাঠালেই অর্ডারের অনুরোধ আমাদের কাছে পৌঁছাবে।</p>
-        <div class="order-note"><span>ⓘ</span><p><strong>ফাইলের গোপনীয়তা</strong><br>এই ওয়েবসাইট আপনার ছবি/PDF আপলোড করে কোনো ডেটাবেজে জমা রাখে না। প্রয়োজনীয় ফাইল WhatsApp চ্যাটে আলাদাভাবে পাঠাতে হবে।</p></div>
-        <div class="order-note"><span>৳</span><p><strong>পেমেন্ট</strong><br>ক্যাশ অন ডেলিভারি/দোকানে পরিশোধের বিষয়টি অর্ডার নিশ্চিত করার সময় জানিয়ে দেওয়া হবে।</p></div>
-      </div>
-      <form class="order-form" id="orderForm" novalidate>
-        <div class="form-title"><span>01 / YOUR DETAILS</span><h3>আপনার তথ্য</h3></div>
-        <div class="field-grid">
-          <label>আপনার নাম <em>*</em><input name="customerName" autocomplete="name" maxlength="80" required placeholder="সম্পূর্ণ নাম"></label>
-          <label>মোবাইল নম্বর <em>*</em><input name="phone" autocomplete="tel" inputmode="tel" maxlength="20" required placeholder="01XXXXXXXXX"></label>
-          <label class="full">ঠিকানা <em>*</em><textarea name="address" rows="2" maxlength="350" required placeholder="গ্রাম/এলাকা, ইউনিয়ন, উপজেলা, জেলা"></textarea></label>
+    <div class="hero-art" aria-hidden="true">
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+      <div class="screen">
+        <div class="screen-top"><i></i><i></i><i></i></div>
+        <div class="screen-body">
+          <div class="screen-mark">KC</div>
+          <div class="screen-line long"></div>
+          <div class="screen-line"></div>
+          <div class="screen-cards">
+            <b>PRINT</b><b>DESIGN</b><b>PDF</b><b>TYPING</b>
+          </div>
         </div>
-        <div class="form-title second"><span>02 / ORDER DETAILS</span><h3>অর্ডারের বিবরণ</h3></div>
-        <div class="field-grid">
-          <label>অর্ডারের ধরন <em>*</em><select name="orderType" id="orderType" required><option value="">নির্বাচন করুন</option><option>পণ্য</option><option>প্রিন্টিং ও ডকুমেন্ট</option><option>ছবি ও গ্রাফিক ডিজাইন</option><option>কম্পিউটার ও অফিস</option><option>অনলাইন আবেদন সহায়তা</option><option>টেকনিক্যাল সাপোর্ট</option><option>কাস্টম কাজ</option></select></label>
-          <label>পণ্য/সেবার নাম <em>*</em><input name="item" id="itemName" maxlength="150" required placeholder="কী অর্ডার করতে চান?"></label>
-          <label>পরিমাণ / কপি<input name="quantity" maxlength="30" placeholder="যেমন: ২টি / ২০ কপি"></label>
-          <label>পেমেন্ট পদ্ধতি<select name="payment"><option>ক্যাশ অন ডেলিভারি (COD)</option><option>দোকানে গিয়ে পরিশোধ</option><option>আগে মূল্য নিশ্চিত করতে চাই</option></select></label>
-          <label class="full">বিশেষ নির্দেশনা<textarea name="details" rows="3" maxlength="1000" placeholder="সাইজ, রঙ, কাগজ, ডেলিভারি বা কাজের বিস্তারিত"></textarea></label>
-        </div>
-        <!-- Honeypot: real users should leave this empty. -->
-        <div class="trap" aria-hidden="true"><label>এই ঘরটি খালি রাখুন<input name="website" tabindex="-1" autocomplete="off"></label></div>
-        <label class="consent"><input type="checkbox" name="consent" required><span>আমি সম্মতি দিচ্ছি যে অর্ডারের তথ্য WhatsApp-এ পাঠানোর জন্য প্রস্তুত করা হবে। <em>*</em></span></label>
-        <p class="form-error" id="formError" role="alert" aria-live="polite"></p>
-        <button class="btn primary submit-btn" type="submit">WhatsApp-এ অর্ডার করুন <span>↗</span></button>
-        <p class="fine-print">মেসেজটি পাঠানো না হলে অর্ডার আমাদের কাছে পৌঁছাবে না। অর্ডার নিশ্চিত করতে আমরা আপনার সঙ্গে যোগাযোগ করতে পারি।</p>
-      </form>
-    </section>
-
-    <section class="section about-section" id="about">
-      <div class="about-visual"><div class="about-monogram">KC<span>+</span></div><p>Reliable • Practical • Local</p></div>
-      <div class="about-copy"><span class="eyebrow">ABOUT KOTHA COMPUTER</span><h2>আপনার এলাকার বিশ্বস্ত ডিজিটাল সেবা কেন্দ্র</h2><p>Kotha Computer-এ কম্পিউটার, প্রিন্টিং, ডকুমেন্ট, ডিজাইন এবং বিভিন্ন অনলাইন কাজের সহায়তা পাওয়া যাবে। কাজের ধরন, মূল্য, সময় ও ডেলিভারি অর্ডার নিশ্চিত করার আগে জানিয়ে দেওয়া হবে।</p><ul><li>কাজ শুরু করার আগে প্রয়োজন ও মূল্য নিশ্চিত</li><li>কাস্টমার অ্যাকাউন্ট ছাড়াই অর্ডারের অনুরোধ</li><li>WhatsApp-এ সরাসরি যোগাযোগ</li></ul></div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div><span class="eyebrow">GET IN TOUCH</span><h2>যোগাযোগ করুন</h2><p>আপনার প্রয়োজনের কথা জানান—আমরা সাহায্য করার চেষ্টা করব।</p></div>
-      <div class="contact-cards">
-        <a class="contact-card" href="tel:01978551099"><span>☎</span><small>ফোন</small><strong>01978551099</strong></a>
-        <a class="contact-card" href="https://wa.me/8801978551099" target="_blank" rel="noopener"><span>◉</span><small>WhatsApp</small><strong>মেসেজ পাঠান</strong></a>
-        <div class="contact-card"><span>⌖</span><small>ঠিকানা</small><strong>ভরতপুর নতুন বাজার, খানপুর, মনিরামপুর, যশোর</strong></div>
-        <div class="contact-card"><span>◷</span><small>খোলা থাকার সময়</small><strong>সকাল ৯টা–দুপুর ২টা<br>বিকাল ৫টা–রাত ২টা</strong></div>
       </div>
-    </section>
-  </main>
+      <div class="floating-card card-print">▤ <span>প্রিন্টিং ও স্ক্যান</span></div>
+      <div class="floating-card card-file">📄 <span>PDF / টাইপিং</span></div>
+    </div>
+  </section>
 
-  <footer class="footer"><a class="brand" href="#home"><img src="assets/logo.svg" alt="" width="38" height="38"><span><strong>Kotha Computer</strong><small>আপনার ডিজিটাল সেবা কেন্দ্র</small></span></a><p>© <span id="year"></span> Kotha Computer. সর্বস্বত্ব সংরক্ষিত।</p><a href="#home">উপরে ফিরে যান ↑</a></footer>
-  <script src="app.js"></script>
+  <!-- ========== SERVICES ========== -->
+  <section class="section" id="services">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow" data-i18n="services.eyebrow">আমাদের সেবা</span>
+        <h2 data-i18n="services.title">ডিজিটাল সেবাসমূহ</h2>
+      </div>
+      <p data-i18n="services.desc">আপনার প্রয়োজন বেছে নিন। মূল্য ও সময় কাজের ধরন অনুযায়ী নিশ্চিত করা হবে।</p>
+    </div>
+
+    <div class="services-toolbar">
+      <input
+        type="search"
+        id="serviceSearch"
+        class="service-search"
+        placeholder="সেবা খুঁজুন..."
+        data-i18n-placeholder="services.search"
+        aria-label="সেবা খুঁজুন"
+      >
+      <div class="service-tabs" id="serviceTabs" role="tablist">
+        <!-- JavaScript থেকে ভরা হবে -->
+      </div>
+    </div>
+
+    <div class="service-grid" id="serviceGrid">
+      <!-- JavaScript থেকে ভরা হবে -->
+    </div>
+    <p class="services-empty" id="servicesEmpty" hidden data-i18n="services.empty">কোনো সেবা খুঁজে পাওয়া যায়নি।</p>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="section how-section" id="how">
+    <div class="section-heading centered">
+      <div>
+        <span class="eyebrow" data-i18n="how.eyebrow">কীভাবে কাজ করে</span>
+        <h2 data-i18n="how.title">মাত্র ৪ ধাপে অর্ডার</h2>
+      </div>
+    </div>
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="step-num">1</div>
+        <h3 data-i18n="how.step1.title">সেবা বাছুন</h3>
+        <p data-i18n="how.step1.desc">উপরের তালিকা থেকে আপনার প্রয়োজনীয় সেবা নির্বাচন করুন।</p>
+      </div>
+      <div class="how-step">
+        <div class="step-num">2</div>
+        <h3 data-i18n="how.step2.title">তথ্য দিন</h3>
+        <p data-i18n="how.step2.desc">নাম, মোবাইল নম্বর ও কাজের বিবরণ লিখুন।</p>
+      </div>
+      <div class="how-step">
+        <div class="step-num">3</div>
+        <h3 data-i18n="how.step3.title">WhatsApp-এ পাঠান</h3>
+        <p data-i18n="how.step3.desc">অর্ডার সাবমিট করলে WhatsApp খুলবে — সেখানে Send চাপুন।</p>
+      </div>
+      <div class="how-step">
+        <div class="step-num">4</div>
+        <h3 data-i18n="how.step4.title">নিশ্চিতকরণ</h3>
+        <p data-i18n="how.step4.desc">আমরা WhatsApp-এ মূল্য ও সময় জানিয়ে দেব।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ORDER ========== -->
+  <section class="order-section" id="order">
+    <div class="order-intro">
+      <span class="eyebrow" data-i18n="order.eyebrow">দ্রুত অর্ডার</span>
+      <h2 data-i18n="order.title">অর্ডার ফর্ম পূরণ করুন</h2>
+      <p data-i18n="order.desc">সাবমিট করলে আপনার তথ্যসহ WhatsApp খুলবে। সেখানে Send চাপলেই অর্ডার আমাদের কাছে পৌঁছাবে।</p>
+
+      <div class="order-note">
+        <span aria-hidden="true">🔒</span>
+        <p>
+          <strong data-i18n="order.save.title">অর্ডার আমাদের কাছে সংরক্ষিত হবে</strong><br>
+          <span data-i18n="order.save.desc">আপনি WhatsApp-এ Send না চাপলেও অর্ডারের বিবরণ আমাদের admin panel-এ সংরক্ষিত হবে। এতে আমরা আপনার সাথে যোগাযোগ করতে পারব।</span>
+        </p>
+      </div>
+
+      <div class="order-note">
+        <span aria-hidden="true">📎</span>
+        <p>
+          <strong data-i18n="order.privacy.title">ফাইলের গোপনীয়তা</strong><br>
+          <span data-i18n="order.privacy.desc">এই ওয়েবসাইট কোনো ফাইল (ছবি/PDF) আপলোড বা জমা রাখে না। প্রয়োজনীয় ফাইল WhatsApp চ্যাটে সরাসরি পাঠাবেন।</span>
+        </p>
+      </div>
+    </div>
+
+    <form class="order-form" id="orderForm" novalidate>
+      <div class="form-title">
+        <span>01 / <span data-i18n="form.section1">আপনার তথ্য</span></span>
+        <h3 data-i18n="form.section1">আপনার তথ্য</h3>
+      </div>
+
+      <div class="field-grid">
+        <label>
+          <span data-i18n="form.name">আপনার নাম</span> <em>*</em>
+          <input name="customerName" autocomplete="name" maxlength="80" required placeholder="সম্পূর্ণ নাম">
+        </label>
+        <label>
+          <span data-i18n="form.phone">মোবাইল নম্বর</span> <em>*</em>
+          <input name="phone" autocomplete="tel" inputmode="tel" maxlength="20" required placeholder="01XXXXXXXXX">
+        </label>
+        <label class="full">
+          <span data-i18n="form.address">ঠিকানা</span> <em>*</em>
+          <textarea name="address" rows="2" maxlength="350" required placeholder="গ্রাম/এলাকা, ইউনিয়ন, উপজেলা, জেলা"></textarea>
+        </label>
+      </div>
+
+      <div class="form-title second">
+        <span>02 / <span data-i18n="form.section2">অর্ডারের বিবরণ</span></span>
+        <h3 data-i18n="form.section2">অর্ডারের বিবরণ</h3>
+      </div>
+
+      <div class="field-grid">
+        <label>
+          <span data-i18n="form.service">সেবা</span> <em>*</em>
+          <select name="orderType" id="orderType" required>
+            <option value="" data-i18n="form.servicePlaceholder">নির্বাচন করুন</option>
+          </select>
+        </label>
+        <label>
+          <span data-i18n="form.item">সেবার বিবরণ</span> <em>*</em>
+          <input name="item" id="itemName" maxlength="150" required placeholder="কী কাজ করতে চান?">
+        </label>
+        <label>
+          <span data-i18n="form.quantity">পরিমাণ / পৃষ্ঠা / কপি</span>
+          <input name="quantity" maxlength="40" placeholder="যেমন: ২টি / ২০ কপি / ৫ পৃষ্ঠা">
+        </label>
+        <label>
+          <span data-i18n="form.payment">পেমেন্ট পদ্ধতি</span>
+          <select name="payment">
+            <option value="COD" data-i18n="form.payment.cod">ক্যাশ অন ডেলিভারি (COD)</option>
+            <option value="shop" data-i18n="form.payment.shop">দোকানে এসে পরিশোধ</option>
+            <option value="ask" data-i18n="form.payment.ask">আগে মূল্য নিশ্চিত করতে চাই</option>
+          </select>
+        </label>
+        <label class="full">
+          <span data-i18n="form.details">বিশেষ নির্দেশনা</span>
+          <textarea name="details" rows="3" maxlength="1000" placeholder="সাইজ, ভাষা, কাগজ, সময় বা অন্য কিছু" data-i18n-placeholder="form.detailsPlaceholder"></textarea>
+        </label>
+      </div>
+
+      <!-- Honeypot: real users leave this empty -->
+      <div class="trap" aria-hidden="true">
+        <label>এই ঘরটি খালি রাখুন
+          <input name="website" tabindex="-1" autocomplete="off">
+        </label>
+      </div>
+
+      <label class="consent">
+        <input type="checkbox" name="consent" required>
+        <span><span data-i18n="form.consent">আমি সম্মতি দিচ্ছি যে আমার দেওয়া তথ্য অর্ডার প্রক্রিয়ার জন্য সংরক্ষণ করা হবে এবং WhatsApp-এ পাঠানোর জন্য প্রস্তুত করা হবে।</span> <em>*</em></span>
+      </label>
+
+      <p class="form-error" id="formError" role="alert" aria-live="polite"></p>
+      <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+
+      <button class="btn primary submit-btn" type="submit" id="submitBtn">
+        <span data-i18n="form.submit">WhatsApp-এ অর্ডার পাঠান</span> <span aria-hidden="true">↗</span>
+      </button>
+      <p class="fine-print" data-i18n="form.fineprint">Send চাপার আগে WhatsApp-এ মেসেজটি দেখে নিন। অর্ডার নিশ্চিত করতে আমরা আপনার সাথে যোগাযোগ করতে পারি।</p>
+    </form>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about-section" id="about">
+    <div class="about-visual">
+      <div class="about-monogram">KC</div>
+      <p>Bharatpur • Monirampur • Jashore</p>
+    </div>
+    <div class="about-copy">
+      <span class="eyebrow" data-i18n="about.eyebrow">KOTHA COMPUTER সম্পর্কে</span>
+      <h2 data-i18n="about.title">ভরতপুরের বিশ্বস্ত ডিজিটাল সেবা কেন্দ্র</h2>
+      <p data-i18n="about.desc">Kotha Computer-এ প্রিন্টিং, টাইপিং, ডকুমেন্ট, ডিজাইন, PDF কাজ, অনলাইন ফর্ম পূরণ এবং কম্পিউটার সাপোর্ট সেবা দেওয়া হয়। মূল্য ও সময় আগে জানিয়ে দেওয়া হয়, তারপর কাজ শুরু হয়।</p>
+      <ul>
+        <li data-i18n="about.li1">কাজ শুরুর আগে মূল্য ও সময় নিশ্চিত</li>
+        <li data-i18n="about.li2">কোনো অ্যাকাউন্ট বা অ্যাপ ইনস্টল করা লাগবে না</li>
+        <li data-i18n="about.li3">WhatsApp-এ সরাসরি যোগাযোগ</li>
+        <li data-i18n="about.li4">ফাইল আপলোড করা লাগবে না — চ্যাটে পাঠান</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact-section" id="contact">
+    <div>
+      <span class="eyebrow" data-i18n="contact.eyebrow">যোগাযোগ</span>
+      <h2 data-i18n="contact.title">আমাদের সাথে যোগাযোগ করুন</h2>
+      <p data-i18n="contact.desc">যেকোনো প্রশ্ন বা কাস্টম কাজের জন্য সরাসরি যোগাযোগ করুন।</p>
+    </div>
+    <div class="contact-cards">
+      <a class="contact-card" href="tel:01978551099">
+        <span aria-hidden="true">☎</span>
+        <small data-i18n="contact.phone">ফোন</small>
+        <strong>01978551099</strong>
+      </a>
+      <a class="contact-card" href="https://wa.me/8801978551099" target="_blank" rel="noopener">
+        <span aria-hidden="true">💬</span>
+        <small data-i18n="contact.whatsapp">WhatsApp</small>
+        <strong data-i18n="contact.whatsappAction">মেসেজ পাঠান</strong>
+      </a>
+      <div class="contact-card">
+        <span aria-hidden="true">⌖</span>
+        <small data-i18n="contact.address">ঠিকানা</small>
+        <strong>ভরতপুর নতুন বাজার, খানপুর, মনিরামপুর, যশোর</strong>
+      </div>
+      <div class="contact-card">
+        <span aria-hidden="true">◷</span>
+        <small data-i18n="contact.hours">খোলা থাকার সময়</small>
+        <strong>সকাল ৯টা – দুপুর ২টা<br>বিকাল ৫টা – রাত ২টা</strong>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-brand">
+    <a class="brand" href="#home">
+      <img src="/assets/logo.svg" alt="" width="38" height="38">
+      <span>
+        <strong>Kotha Computer</strong>
+        <small data-i18n="footer.tagline">আপনার ডিজিটাল সেবা কেন্দ্র</small>
+      </span>
+    </a>
+  </div>
+  <div class="footer-links">
+    <a href="/privacy.html" data-i18n="footer.privacy">প্রাইভেসি নীতি</a>
+    <a href="/admin.html" data-i18n="footer.admin">অ্যাডমিন</a>
+    <a href="#home" data-i18n="footer.top">উপরে ফিরে যান ↑</a>
+  </div>
+  <p class="footer-copy">© <span id="year"></span> Kotha Computer. <span data-i18n="footer.rights">সর্বস্বত্ব সংরক্ষিত।</span></p>
+</footer>
+
+<!-- ========== SCRIPTS ========== -->
+<script src="/js/config.js"></script>
+<script src="/js/i18n.js"></script>
+<script src="/js/app.js"></script>
 </body>
 </html>
